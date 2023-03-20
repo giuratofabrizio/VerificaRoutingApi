@@ -4,6 +4,7 @@
 </p>
 
 
-<div *ngFor="let s of results">
-    <a [routerLink] = "['/item-serietv', s.id]">{{s.name}}</a>
+<div *ngFor="let s of result">
+    <a [routerLink] = "['/item-serietv', s.id]">{{s.show.name}}</a>
 </div>
+
