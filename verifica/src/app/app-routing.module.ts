@@ -6,6 +6,7 @@ import { SearchSerietvComponent } from './search-serietv/search-serietv.componen
 const routes: Routes = [
   {path: 'search-serietv', component: SearchSerietvComponent},         
   {path: 'search-serietv/:id', component: ItemSerietvComponent}, 
+  { path: '',   redirectTo: '/search-serietv', pathMatch: 'full' }
 ];
 
 @NgModule({

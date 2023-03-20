@@ -1,1 +1,9 @@
-<p>search-serietv works!</p>
+<p>
+    <input type="text" #newquery>
+    <button (click)="submit(newquery)">Search</button>
+</p>
+
+
+<div *ngFor="let s of results">
+    <a [routerLink] = "['/item-serietv', s.id]">{{s.name}}</a>
+</div>
